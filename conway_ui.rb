@@ -3,7 +3,8 @@ require './lib/conway'
 
 def menu
   system "clear"
-  puts "What size of grid do you want in NxN format?"
+  puts "Let's create a NxN grid for our game"
+  puts "Enter N below"
   grid = gets.chomp.to_i
   new_game = Game.new(grid)
   i = 0
